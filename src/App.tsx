@@ -9,7 +9,7 @@ function App() {
 
   useEffect(
     () => {
-      fetch('http://localhost:3001/')
+      fetch('/api/users')
         .then(response => response.json())
         .then(data => setUserName((data as { id: string, name: string }).name));
     }, []
