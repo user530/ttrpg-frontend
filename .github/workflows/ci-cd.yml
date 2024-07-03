@@ -50,4 +50,4 @@ jobs:
           cd ~/projects/ttrpg_app/frontend
           docker pull ${{ secrets.DOCKERHUB_USERNAME }}/ttrpg-fe:latest
           cd ..
-          docker-compose up -d frontend
+          docker compose up -d frontend
