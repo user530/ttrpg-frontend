@@ -19,7 +19,7 @@
         2.5.2. All players (with links to the profiles);
         2.5.3. Characters they were playing (with links, if they are added to the player profile in the app));
         2.5.4. Some other single game statistiscs (number of sessions played, etc);
-    2.6. All profiles should contain some common statistics (like number of games played, number of times player/gm was abscent w/o warning, etc);
+    2.6. All profiles should contain some common statistics (like number of games played, number of times player/gm was abscent w/o warning, percantage of games that succesfully ended, etc);
     2.7. All profiles should contain rewards (all users could purchase "rewards" for the xp and give them to other players);
     2.8. All profiles should contain game prefferences (preffered game systems/settings/tags, etc);
     (STILL UNDER CONSIDERATION, MAYBE MAKE SOME "hidable" in profile settings)
