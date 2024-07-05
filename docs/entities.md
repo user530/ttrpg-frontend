@@ -23,7 +23,7 @@ standard field;
 standard field;
 
 # avatar/profile 
-cture - add a flavor to a user;
+picture - add a flavor to a user;
 
 # friends 
 list of friend account links, used for social networking features;
@@ -39,6 +39,12 @@ link between account and player profile;
 
 # profileGmId 
 link between account and game master profile;
+
+# lastLogin
+the time of the last login;
+
+# contactInfo
+links to social media and such;
 
 ## Player
 # id 
@@ -82,7 +88,7 @@ prefferable play schedule: days and time periods (scheduling shoud be better dis
 unique game master identificator;
 
 # accountId 
-link to the user account
+link to the user account;
 
 # ratingGm 
 GM rating based on other player reviews (we need to specify conditions who and when could rate the GM to prevent possible abuse). Ratings should also be "non-anonymous", with the link to the rank author;
@@ -97,7 +103,7 @@ game statistics based on the game history;
 same as the Player history, but show games which were hosted and mastered by this GM;
 
 # rewardsGm 
-same idea as player rewards, but the list of GM rewards should be different (maybe some common rewards, but some rewards only available to the game masters)
+same idea as player rewards, but the list of GM rewards should be different (maybe some common rewards, but some rewards only available to the game masters);
 
 # xpGm
 same idea as the player XP and level, but maybe the list of actions GM could spend xp on is different;
@@ -122,16 +128,19 @@ The list of game systems, for example: D&D3.5, D&D4, D&D5, PF, PF2, etc;
 The list of game settings, for example: ForgottenRealms, Greyhawk, etc;
 
 # gameGenres 
-list of tags like: Adventure, ActionRPG, Detective, etc
+list of tags like: Adventure, ActionRPG, Detective, etc;
 
 # gamePriorities 
-number of percentiles showing game accents: Combat - 50%, Roleplay - 25%, etc
+number of percentiles showing game accents: Combat - 50%, Roleplay - 25%, etc;
 
-# gamePlayerSlots 
-number of players for the game
+# gamePlayerSlotsMin 
+minimal number of players for the game;
 
-# gameObserverSlots 
-number of observers for the game
+# gamePlayerSlotsMax
+maximal number of players for the game;
+
+# gameObserverSlots
+number of observers for the game;
 
 # gameShortDescription 
 game description should include several key points: 
@@ -176,7 +185,7 @@ the list of software required to play this game (create a list of popular choise
 # gameFrequency 
 specify the number of games per period (prepare the list of possible periods like day/week/month, etc);
 
-# gameSessionTime 
+# gameSessionDuration 
 minimal time for a game session (in hours);
 
 # gameSchedule 
@@ -186,3 +195,20 @@ available days, and time intervals (intervals can't be less than specified sessi
 
 # gameFormOnResponse 
 optional, if specified it is a the list of questions that player trying to respond to this game would be asked to answer before his request would be sent to the GM;
+
+
+## Review
+# id
+unique identifier;
+
+# author
+link to either player or game master profile;
+
+# reviewType
+type of the review - player review, game master review, maybe even observer review;
+
+# reviewRank
+the score of the review
+
+# reviewText
+the text of the review
