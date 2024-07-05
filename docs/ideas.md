@@ -5,9 +5,11 @@
 ## CORE FEATURES
 1. Social Networking:
     1.1. Friend list with ability to add/remove friends, see player statuses;
-    1.2. Groups / "guilds" with ability to join and leave. Groups provide status (maybe xp and awards if we implement it) and dedicated chat/forum channels;
+    1.2. Groups / "guilds" with ability to join and leave. Groups provide status (maybe xp and awards if we implement it) and dedicated chat/forum channels. Add group chat support for the game sessions;
     1.3. Real time chating capabilities with different channels and DM capabilities;
-    1.4. Discussion forum with thematic channels (for different game systems, settings, themes, etc).
+    1.4. Discussion forum with thematic channels (for different game systems, settings, themes, etc). Add categories and subcategories for better organisation, and maybe some topics for forum type games (text format, not-real time game);
+    1.5. Real time notifications via WebSocket;
+    1.6. Chats store history (maybe only for a limited time);
 
 2. Profiling feature (each account should have at least one profile, but could have both):
     2.1. User profiles of 2 types: Player and Game master (Storyteller);
@@ -38,23 +40,27 @@
     3.8. Game master could create, modify (only when the game status allows. If there are some players already joined the game, GM could not change game setting w/o all players consenting to it) and delete games. We discuss game entities in a separate block later;
     3.9. If game requires players to provide character lists, Game master could approve or disapprove suggested character (dissaprove with reason), form and re-form party (parties, if game allows multiple parties) and change player statuses (for example if player changes character or dies);
     3.10. Game master could change game status (Open - gm could invite players to game but its not visible by default, LookingForPlayers - game shows up in the games list and all players could see it, WaitingForStart - game is filled, but still not started, if everything is OK -> he could set status as Active or return back to the LFG if something changes, also add couple of closed statuses for the history to check if game ended normally with all parts agreeing or GM stoped it without good reason);
-    3.11. Game master could schedule sessions, set reminders for the players, send notifications (including through e-mail associated with account linked to profile), and add notices to a game notice board;
+    3.11. Game master could schedule sessions, set reminders for the players, send notifications (including through e-mail associated with account linked to profile), and add notices to a game notice board. Add visual interface with drag and drop functionality to the scheduler;
+    3.12. Add timezone support and automate the process of "matching" player/gm schedules based on each individual time zone;
 
 ## Potential features
 
-4. Character creation tool:
-    4.1. Automated character sheets for different game systems;
-    4.2. Ability to save/export/print the sheet;
+4. Recomendation system - suggest games / players based on the player/game master prefferences;
 
-5. Game resources:
-    5.1. Digital versions of the popular books/guides and supplements;
-    5.2. Templates and tools - common game tools to help players and game masters (cheat sheet to create a character, session outline cheatsheet, random encounter guidelines, etc);
-    5.3. Home brew workshop - allow game masters to submit "custom rulesets", rate them, add them to the game, etc;
+5. Character creation tool:
+    5.1. Automated character sheets for different game systems;
+    5.2. Ability to save/export/print the sheet;
 
-6. Game app:
-    6.1. Allow "separate" vision and "audio" for each tool;
-    6.2. Dice rolling, Dice tower and dice log for "hidden" rolls so in the end of the session players could confirm the roll result;
-    6.3. Multiple audio channels (everyone, whole party, observers, specific player/observer) and ability to "stack" several audio files into each channel. Easy drag and drop interface, with ability to easy load (from url or file) audio, trim/specify the range and pass to specific audio channel;
-    6.4. Ability to add some "automated check" triggers on the map, that fire up when characters show up in the range. Game make automated "hidden" roll for each player, and if player has success he sees something, that others cant see. Hidden "item" could be just a text pop-up, some image prop, or maybe even a sound(?);
-    6.5. Ability to make "multi-level" maps with portals. Portal works both with "vision" and movement: rays tracing "through" the portal return the vision of the "other side", and moving through the portal "teleports" tokens to the other side. Maybe even posibility to make 1-way or 2-way portals;
-    6.6. Maybe add ability to use first person view to see through the character eyes (2.5d or 3d);
+6. Game resources:
+    6.1. Digital versions of the popular books/guides and supplements;
+    6.2. Templates and tools - common game tools to help players and game masters (cheat sheet to create a character, session outline cheatsheet, random encounter guidelines, etc);
+    6.3. Home brew workshop - allow game masters to submit "custom rulesets", rate them, add them to the game, etc;
+
+7. Game app:
+    7.1. Allow "separate" vision and "audio" for each tool;
+    7.2. Dice rolling, Dice tower and dice log for "hidden" rolls so in the end of the session players could confirm the roll result;
+    7.3. Multiple audio channels (everyone, whole party, observers, specific player/observer) and ability to "stack" several audio files into each channel. Easy drag and drop interface, with ability to easy load (from url or file) audio, trim/specify the range and pass to specific audio channel;
+    7.4. Ability to add some "automated check" triggers on the map, that fire up when characters show up in the range. Game make automated "hidden" roll for each player, and if player has success he sees something, that others cant see. Hidden "item" could be just a text pop-up, some image prop, or maybe even a sound(?);
+    7.5. Ability to make "multi-level" maps with portals. Portal works both with "vision" and movement: rays tracing "through" the portal return the vision of the "other side", and moving through the portal "teleports" tokens to the other side. Maybe even posibility to make 1-way or 2-way portals;
+    7.6. Maybe add ability to use first person view to see through the character eyes (2.5d or 3d);
+    7.7. Add a mobile device support for the game app (with perfomance optimization);
