@@ -46,6 +46,12 @@ the time of the last login;
 # contactInfo
 links to social media and such;
 
+# languages
+the list of languages that user could use in games;
+
+# timeZone
+the timezone of the user;
+
 ## Player
 # id 
 unique player identificator;
