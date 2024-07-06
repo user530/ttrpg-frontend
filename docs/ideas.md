@@ -43,6 +43,8 @@
     3.11. Game master could schedule sessions, set reminders for the players, send notifications (including through e-mail associated with account linked to profile), and add notices to a game notice board. Add visual interface with drag and drop functionality to the scheduler;
     3.12. Add timezone support and automate the process of "matching" player/gm schedules based on each individual time zone;
 
+
+
 ## Potential features
 
 4. Recomendation system - suggest games / players based on the player/game master prefferences;

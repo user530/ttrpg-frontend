@@ -16,10 +16,10 @@ used for authentication, also used for the communication in chat /forum. Unique 
 # status 
 account status, used to properly handle user account (activate, de-activate, etc);
 
-# creation 
+# creationDate
 standard field;
 
-# updation 
+# updateDate
 standard field;
 
 # avatar/profile 
@@ -52,7 +52,9 @@ the list of languages that user could use in games;
 # timeZone
 the timezone of the user;
 
-## Player
+
+
+### Player
 # id 
 unique player identificator;
 
@@ -88,6 +90,8 @@ the list of game filter setups which allow player for re-usable and fast way to 
 
 # schedulePlayer 
 prefferable play schedule: days and time periods (scheduling shoud be better discussed in the game entity);
+
+
 
 ## Game master
 # id 
@@ -125,6 +129,9 @@ same as player presets, but for filtering out players;
 
 # scheduleGm
 same as player schedule but for the GM;
+
+
+
 
 ## Game
 # gameSystem 
@@ -203,6 +210,7 @@ available days, and time intervals (intervals can't be less than specified sessi
 optional, if specified it is a the list of questions that player trying to respond to this game would be asked to answer before his request would be sent to the GM;
 
 
+
 ## Review
 # id
 unique identifier;
@@ -218,3 +226,16 @@ the score of the review
 
 # reviewText
 the text of the review
+
+
+
+## Notification
+## ChatChannel
+## Chat
+## Message
+## Friendship
+## Group
+## GameTag
+## GameRequest
+## PlayerPrefference
+## GmPrefference
