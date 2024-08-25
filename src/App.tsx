@@ -9,9 +9,20 @@ function App() {
 
   useEffect(
     () => {
+      // Test Users Microservice
       fetch('/api/users')
         .then(response => response.json())
         .then(data => setUserName((data as { id: string, name: string }).name));
+
+      // Test Auth Microservice
+      fetch('/api/auth/register',
+        {
+          method: 'POST',
+          body: JSON.stringify({ username: 'User530', email: 'top@kek.com', password: 'strongpass' })
+        }
+      )
+        .then(response => response.json())
+        .then(data => console.log(data))
     }, []
   );
 
